@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomodoro Timer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Pomodoro Timer</h1>
+        <div id="timer" class="timer">
+            25:00
+        </div>
+        <div class="controls">
+            <button id="start-pause"><i class="fas fa-play"></i> Start</button>
+            <audio id="relaxing-audio" src="./5 Minute Timer - Relaxing Music with Ocean Waves.mp3" loop></audio>
+            <button id="reset"><i class="fas fa-redo"></i> Reset</button>
+        </div>
+        <div class="settings">
+            <label for="work-interval">Work interval (minutes):</label>
+            <input id="work-interval" type="number" value="25" min="1" max="60">
+            <br>
+            <label for="break-interval">Break interval (minutes):</label>
+            <input id="break-interval" type="number" value="5" min="1" max="60">
+            
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
